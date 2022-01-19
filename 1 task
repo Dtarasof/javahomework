@@ -1,0 +1,22 @@
+/*1. Створити програму, що виводить на екран найближче до 10 з двох чисел,
+записаних в змінні m і n. Наприклад, серед чисел 8,5 і 11,45 найближче до десяти
+11,45.*/
+public class Zadachi{
+    public static void main(String[] args){
+        double n=8.5;
+        double m=11.45;
+        int a=10;
+        double b=Math.abs(a-n);
+        double c=Math.abs(a-m);  
+        if (b==c){
+            System.out.println("Числа "+n +" и "+m + " равноудалены от "+a);
+        }
+        if(b>c){
+            System.out.println("Число "+m+" ближе к "+a);
+        }
+        if (b<c) {
+            System.out.println("Число "+n+" ближе к "+a);
+        }
+    }
+
+}
