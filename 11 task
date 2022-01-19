@@ -1,0 +1,31 @@
+ /*Перевірте, чи є введене користувачем з клавіатури натуральне число - простим.
+Постарайтеся не виконувати зайвих дій (наприклад, після того, як ви знайшли
+хоча б один нетривіальний дільник вже ясно, що число складене і перевірку
+продовжувати не потрібно). Також врахуйте, що найменший дільник
+натурального числа n, якщо він взагалі є, обов'язково розташовується в відрізку
+[2; √n].*/
+
+import java.util.Scanner;
+public class task11 {
+  public static void main(String[] args) {
+    System.out.println("Введіть число");
+        int m = 0;
+        boolean prime = true;
+        Scanner n = new Scanner(System.in);
+        if(n.hasNextInt()) {
+            m = n.nextInt();
+        } else System.out.print("Помилка введення");
+         for (int c = 2; c <= Math.sqrt(m); c++) {
+            int r = m % c;
+            if (r == 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            System.out.print(m + "Це є простим числом");
+        } else {
+            System.out.print(m + " Це нє є простим числом");
+        }
+    }
+}
