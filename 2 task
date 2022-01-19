@@ -1,0 +1,26 @@
+/*У три змінні a, b і c записані три дійсних числа. Створити програму, яка буде
+знаходити і виводити на екран речові коріння квадратного рівняння ax² + bx + c =
+0, або повідомляти, що коріння немає*/
+ public class task2 {
+  public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+	        System.out.print("Введите значение a: ");
+	        double a = scanner.nextDouble();
+	        System.out.print("Введите значение b: ");
+	        double b = scanner.nextDouble();
+	        System.out.print("Введите значение c: ");
+	        double c = scanner.nextDouble();
+	        double d = b * b - 4 * a * c;
+	        if (d > 0) {
+	            double x1 = (-b - Math.sqrt(d)) / (2 * a);
+	            double x2 = (-b + Math.sqrt(d)) / (2 * a);
+	            System.out.println("Корені рівняння: x1 = " + x1 + ", x2 = " + x2);
+	        } else if (d == 0) {
+	            double x;
+	            x = -b / (2 * a);
+	            System.out.println("Рівняння має корінь: x = " + x);
+	        } else {
+	            System.out.println("Рівняння немає корінів");
+	        }
+	    }
+	}
