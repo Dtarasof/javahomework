@@ -9,13 +9,13 @@ public class Zadachi{
         double b=Math.abs(a-n);
         double c=Math.abs(a-m);  
         if (b==c){
-            System.out.println("Числа "+n +" и "+m + " равноудалены от "+a);
+            System.out.println("Числа "+n +" и "+m + " рівновіддалені від "+a);
         }
         if(b>c){
-            System.out.println("Число "+m+" ближе к "+a);
+            System.out.println("Число "+m+" ближче до "+a);
         }
         if (b<c) {
-            System.out.println("Число "+n+" ближе к "+a);
+            System.out.println("Число "+n+" ближче до "+a);
         }
     }
 
