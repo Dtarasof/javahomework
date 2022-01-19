@@ -1,0 +1,17 @@
+/*Для введеного користувачем з клавіатури натурального числа порахуйте суму
+всіх його цифр (заздалегідь не відомо скільки цифр буде в числі)*/
+public class task14{
+  public static void main(String[] args) {
+   System.out.println("Введить число");
+        int sum = 0;
+        Scanner n = new Scanner(System.in);
+        if (n.hasNextInt()) {
+            int m = n.nextInt();
+        while (m != 0) {
+            sum = sum + m % 10;
+            m = m / 10;
+        }
+        System.out.print("Сума всіх цифр дорівнюе " + sum);
+        } else System.out.println("Помилка");
+    }
+}
