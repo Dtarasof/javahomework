@@ -1,0 +1,19 @@
+/*Виведіть на екран всі позитивні подільники натурального числа, введеного
+користувачем з клавіатури.*/
+import java.util.Scanner;
+public class task10 {
+    public static void main(String[] args) {
+        System.out.println("Введіть число");
+        int m = 0;
+        Scanner n = new Scanner(System.in);
+        if(n.hasNextInt()) {
+            m = n.nextInt();
+        } else System.out.println("Помилка введення");
+        for (int c=1; c<m; c++) {
+            int r = m%c;
+            if (r == 0) {
+                System.out.println(c + " ");
+            }
+        }
+    }
+}
