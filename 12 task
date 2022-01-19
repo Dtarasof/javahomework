@@ -1,0 +1,14 @@
+/*Створіть програму, що виводить на екран 12 перших елементів послідовності 2an-
+2-2, де a1 = 3 і a2 = 2.*/
+ public static void main(String[] args){
+           int aNeChet=3,aChet=2;
+        System.out.print(aNeChet+" "+aChet+" ");
+        
+        for(int i=3;i<=20;i++){
+            if(i%2!=0){
+                aNeChet=2*aNeChet-2;
+                System.out.print(aNeChet+" ");
+            }
+            else{
+                aChet=2*aChet-2;
+                System.out.print(aChet+" ")}}}}
